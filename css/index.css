@@ -1,0 +1,205 @@
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Abril Fatface', cursive;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0; 
+}
+header{
+	width: 100%;
+	height: 80px;
+	display: inline-flex;
+	flex-direction: row;
+}
+#myLogo{
+	width: 40%;
+
+}
+#menuOption{
+	background-color: #EEF4F2;
+	width: 60%;
+	height: 100%;
+	font-size: 24px;
+}
+#menuOption ul{
+	width: 100%;
+	padding: 0;
+	display: inline-flex;
+	flex-direction: row;
+
+}
+#menuOption ul li{
+	padding-right: 5%;
+	list-style: none;
+
+}
+#menuOption ul li:hover{
+	transform: scale(1.2);
+	transition: transform 0.4s ease-in-out;
+	cursor: pointer;
+}
+#menuOption ul li a{
+	text-decoration: none;
+}
+#myImage{
+	width: 100%;
+	height: 500px;
+	text-align: center;
+	background-color: #EEF0EF;
+
+
+}
+#welcomeMessage{
+	width: 60%;
+	padding: 0 20%;
+	text-align: center;
+	background-color: #EEF0EF;
+}
+#welcomeMessage h1{
+	padding: 10px 0;
+	font-size: 30px;
+}
+.connectionToOtherPage{
+	width: 60%;
+	padding: 0 20%;
+	display: inline-flex;
+	flex-direction: row;
+}
+#linkToBio, #linkToCollection, #linkToContact{
+	width: 32%;
+	padding: 5% 1.33%;
+}
+#linkToBio p, #linkToCollection p, #linkToContact p{
+	margin: 3% 0;
+	font-family: 'Aerial';
+}
+button{
+	width: 115px;
+	height: 40px;
+	margin: 0 25%;
+	background-color: #007F41;
+	color: #A6CCB8;
+	border-radius: 20%;
+	text-transform: uppercase;
+}
+button:hover{
+	transform: scale(1.1, 1.1);
+	transition: transform 0.3s ease-in;
+	cursor: help;
+	box-shadow: 2px 2px 2px black;
+}
+.footer{
+	width: 60%;
+	padding: 0 20%;
+	background: #0A2618;
+	display: inline-flex;
+	flex-direction: row;
+}
+#socialMedia{
+	width: 45%;
+	padding: 5%;
+	color: #fff;
+}
+#homepageContact{
+	width: 45%;
+	padding: 5%;
+	color: #fff;
+}
+#copyright{
+	height: 40px;
+	background-color: #008341;
+	color: #F9FBFA;
+	text-align: center;
+}
+#copyright p{
+	padding: 10px;
+}
+.bio p{
+	color: black;
+	font-family: Sergio Script;
+}
+.bio p:hover{
+	text-shadow: 4px 4px 2px gray;
+}
+.bio h2{
+	text-align: center;
+	text-decoration: underline;
+
+}
+.bio img{
+	text-align: center;
+	padding-left: 40%;
+	padding-top: 10px;
+}
+.bio{
+	background-color: #EEF4F2;
+}
+
+.sub form label{
+	font: cursive;
+	font-size: 25px;
+	color: orange;
+	background-color:#EEF4F2;
+	display: flex;
+	flex-direction: column;
+	margin: 0 50px;
+}
+.sub form input{
+	box-shadow: 4px 4px green;
+	background-color:#EEF4F2;
+	margin:0 50px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.sub {
+	background-color: #EEF4F2;
+}
+#socialMedia ul li a{
+	text-decoration:  none;
+	
+
+}
+#socialMedia ul li{
+	list-style: none;
+}
+#homepageContact img{
+	padding-top: 10px;
+	padding-left: 40px;
+}
+#homepageContact p {
+	font-family: cursive;
+}
+#socialMedia ul li img{
+	padding-right: 50px;
+}
+
+#gallery{
+	margin: 0 auto;
+	background-color: #EEF4F2;
+
+	
+}
+#gallery img {
+	border-radius: 10px;
+}
+
+#gallery a:hover {
+	border-color: white;
+	opacity: 1;
+	box-shadow: 4px 4px 10px gray;
+	border-radius: 10px;
+
+}
+
+#gallery a{
+	margin: 3px;
+	border: 4px solid transparent;
+	display: inline-block;
+	border-radius: 6px;
+	transition: all .5s ease-in;
+	opacity: 0.8;
+}
+
