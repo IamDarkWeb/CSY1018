@@ -1,25 +1,30 @@
+/*UNID = 17425095 Name = Rojal Pradhan */
 body{
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	font-family: 'Abril Fatface', cursive;
+	width: 100%; /* gives 100 width in body tag */
+	margin: 0; /* no margin */
+	padding: 0; /* no padding is given */
+	font-family: 'Abril Fatface', cursive; /* font family is given */
 }
+/* css given to all heading*/
 h1,h2,h3,h4,h5,h6,p{
 	margin: 0;
 	padding: 0; 
 }
+/* css is given header tag */
 header{
 	width: 100%;
-	height: 80px;
-	display: inline-flex;
-	flex-direction: row;
+	height: 80px; /* height is given */
+	display: inline-flex;/* flex propert is used*/
+	flex-direction: row;/* the flex is direction is given */
 }
+/* for logo */
 #myLogo{
 	width: 40%;
 
 }
+/* for navigation */
 #menuOption{
-	background-color: #EEF4F2;
+	background-color: #EEF4F2;/* background color is added */
 	width: 60%;
 	height: 100%;
 	font-size: 24px;
@@ -36,18 +41,19 @@ header{
 	list-style: none;
 
 }
+/* the change in navigation when hover */
 #menuOption ul li:hover{
-	transform: scale(1.2);
+	transform: scale(1.2);/* animation is given */
 	transition: transform 0.4s ease-in-out;
-	cursor: pointer;
+	cursor: pointer;/* cursor style is changed*/
 }
 #menuOption ul li a{
-	text-decoration: none;
+	text-decoration: none;/* no text decoration */
 }
 #myImage{
 	width: 100%;
 	height: 500px;
-	text-align: center;
+	text-align: center;/* image kept in  middle*/
 	background-color: #EEF0EF;
 
 
@@ -62,6 +68,7 @@ header{
 	padding: 10px 0;
 	font-size: 30px;
 }
+/* another navigation system in index page*/
 .connectionToOtherPage{
 	width: 60%;
 	padding: 0 20%;
@@ -73,7 +80,7 @@ header{
 	padding: 5% 1.33%;
 }
 #linkToBio p, #linkToCollection p, #linkToContact p{
-	margin: 3% 0;
+	margin: 3% 0;/* margin is set */
 	font-family: 'Aerial';
 }
 #linkToBio a, #linkToCollection a, #linkToContact a{
@@ -82,15 +89,16 @@ header{
 	margin: 0 25%;
 	background-color: #007F41;
 	color: #A6CCB8;
-	border-radius: 10%;
-	text-transform: uppercase;
+	border-radius: 10%;/* border radius for curve corner */
+	text-transform: uppercase; /* change letter in uppercase */
 	padding-bottom: 10px;
 }
+/* changing read more while hover */
 #linkToBio a:hover{
 	transform: scale(3.1, 3.1);
 	transition: transform 0.3s ease-in;
 	cursor: help;
-	box-shadow: 2px 2px 2px black;
+	box-shadow: 2px 2px 2px black; /* box shadow is given for proper decoration */
 }
 #linkToCollection a:hover{
 	transform: scale(3.1, 3.1);
@@ -150,7 +158,7 @@ header{
 .bio{
 	background-color: #EEF4F2;
 }
-
+/* input area css of contact */
 .sub form label{
 	font: cursive;
 	font-size: 25px;
@@ -176,7 +184,7 @@ header{
 
 }
 #socialMedia ul li{
-	list-style: none;
+	list-style: none; /* no dot or blue line */
 }
 #homepageContact img{
 	padding-top: 10px;
@@ -202,7 +210,7 @@ header{
 }
 
 #gallery a:hover {
-	border-color: white;
+	border-color: white;/* color given to border */
 	opacity: 1;
 	box-shadow: 4px 4px 10px gray;
 	border-radius: 10px;
@@ -216,6 +224,51 @@ header{
 	display: inline-block;
 	border-radius: 6px;
 	transition: all .5s ease-in;
-	opacity: 0.8;
+	opacity: 0.8;/* opacity is set */
+}
+
+/*making webpage responsive using media query*/
+
+@media(max-width: 800px)
+{
+	header
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		height:200px;
+	}
+	#myLogo
+	{
+		width: 100%;
+	}
+	#menuOption
+	{
+		width: 100%;
+		
+	}
+	#menuOption ul
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+
+		
+	}
+	#menuOption ul li a{
+		justify-content: center;
+		text-align: center;
+	}
+
+	section
+	{
+		margin-top: 40%;
+		width: 100%;
+
+	}
+	#myImage{
+		display: none;
+	}
+	
 }
 
